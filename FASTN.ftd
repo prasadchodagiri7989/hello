@@ -1,19 +1,21 @@
 -- import: fastn
 
--- fastn.package: prasadchodagiri7989.github.io/hello
-favicon: /-/prasadchodagiri7989.github.io/hello/favicon.ico
+-- fastn.package: hello
 
--- fastn.dependency: fastn-community.github.io/doc-site as doc-site
--- fastn.dependency: fastn-community.github.io/footer
--- fastn.dependency: fastn-community.github.io/roboto-typography
--- fastn.dependency: fastn-community.github.io/dark-flame-cs
+-- fastn.dependency: fastn-community.github.io/bling
 
--- fastn.auto-import: prasadchodagiri7989.github.io/hello/FASTN/ds
--- fastn.auto-import: prasadchodagiri7989.github.io/hello/assets
--- fastn.auto-import: doc-site
+;; doc-site components which gives it documentation site like look.
 
--- fastn.sitemap:
+;; UNCOMMENT NEXT LINE
+-- fastn.dependency: fastn-community.github.io/doc-site
 
-# Home: index.html
+;; We will auto-import `doc-site`. Auto-import is done in `FASTN.ftd`.
+;; Auto-importing is done only for those packages that you want to apply 
+;; to the entire packages.
 
-- Right Sidebar Sample: /sidebar/
+;; UNCOMMENT NEXT LINE
+-- fastn.auto-import: fastn-community.github.io/doc-site as ds
+
+;; As you know from previous example, the keyword `doc-site` becomes the default
+;; alias, but you can give shorter alias by using `as` command.
+;; For `doc-site` we use alias as `ds`.
