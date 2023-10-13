@@ -1,40 +1,31 @@
--- ds.page: Welcome to doc-site
+-- import: fastn-community.github.io/bling/quote
+
+;; `page` is the container type component in `doc-site`. All other components of
+;; doc-site can be used inside `page` component.
+;; The container type component needs an `end` statement to mark the end of this
+;; container component.
+
+;; Page title goes in the caption area.
+;; Also, you can give the `site-name` of your site as header property
+
+;; ========================= REMOVE THE COMMENT BELOW ==========================
+-- ds.page: Page Title
+site-name: My Site
+;; ================================= END =======================================
+
+-- quote.background-image: Lucius Annaeus Seneca
+quote-background: https://e0.pxfuel.com/wallpapers/491/601/desktop-wallpaper-ultra-original-and-background-it-ultra.jpg
+text-color: #FFF
+
+As long as you live, keep learning how to live.
 
 
-⚡️ `doc-site` will help you create a beautiful documentation site in no time.
+;; By placing `end` marker after the `quote.chalice` component, the
+;; `quote.chalice` would become child of the `ds.page`.
 
-It provides out-of-the-box documentation features that can be used to create any
-kind of site(personal website, blog, etc).
-
-[Click here](https://fastn-community.github.io/doc-site/) to read doc-site
-documentation.
-
--- ds.h3: 🚀 Fast Track 
-
-Create your first fastn [web-site](https://fastn.com/expander/hello-world/-/build/) 
-project in just 5 minutes!
-
--- ds.h3: 🌟 Whats next?
-
-Create your first page. 
-[Click here to know more](https://fastn-community.github.io/doc-site/components/page/).
-
--- ds.h3: 👀 Want to learn more?
-
-Feel free to check [our expander course](https://fastn.com/expander/) or jump
-into our [FifthTry Discord server](https://discord.gg/bucrdvptYd).
+;; This is the end marker for this container type component.
+;; It uses `end:` keyword followed by component name, which is `ds.page` here.
 
 
--- ds.h3: 🎯 Used by?
-
-Our all documentation sites uses this `doc-site` theme.
-
-- [fastn.com](https://fastn.com/home/)
-- [FifthTry.com](https://www.fifthtry.com/)
-
--- ds.h2: Learn fastn and become a pro?
-
-You are one click away, just check [our documentation](https://fastn.com/) and 
-dont forget to jump into our [FifthTry Discord server](https://discord.gg/bucrdvptYd).
-
+;; ========================= REMOVE THE COMMENT BELOW ==========================
 -- end: ds.page
